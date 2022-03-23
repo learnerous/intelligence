@@ -1,0 +1,102 @@
+body {
+  background-color: royalblue;
+}
+.apps {
+  width: 100%;
+  z-index: 0;
+}
+/* title */
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed");
+.main-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+.method {
+  margin-top: 60px;
+  width: 100%;
+}
+
+/* end title */
+.row1 {
+  background-image: url("geospatial.png");
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image1 {
+  z-index: 100;
+  border-radius: 10px;
+  width: 47%;
+  height: 400px;
+  transition: transform 0.3s;
+}
+.image1:hover {
+  z-index: 100;
+  margin-left: 100px;
+  transform: scale(1.2);
+}
+/* .post1 {
+  transition: transform 0.2s;
+  font-weight: bold;
+  height: 300px;
+  background-color: moccasin;
+  width: 45%;
+  margin-left: 2px;
+  margin-top: 80px;
+  border-radius: 13px;
+}
+.post1:hover {
+  margin-right: 100px;
+  transform: scale(1.3);
+} */
+.post1 {
+  z-index: 1;
+  border-radius: 20px;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  width: 600px;
+  position: relative;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.post1:before {
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(0);
+  transition: 0.4s ease-out;
+}
+.post1:hover .post-title {
+  transform: scale(1.2);
+  margin-left: 50px;
+  border-radius: 20px;
+  color: #fff;
+}
+.post1:hover:before {
+  border-radius: 20px;
+  transform: scaleY(1);
+}
+
+.post-title {
+  margin-left: 10px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.333;
+  transition: 0.4s ease-out;
+}
